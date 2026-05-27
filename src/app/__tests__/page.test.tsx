@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Home from "../page";
 
 describe("Home page", () => {
-  it("renders the hero with Anna's name and tagline", () => {
+  it("renders the hero", () => {
     render(<Home />);
 
     expect(
