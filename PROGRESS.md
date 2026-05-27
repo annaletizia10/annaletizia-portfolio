@@ -1,16 +1,16 @@
 # Portfolio build — progress log
 
-Last updated: 2026-05-26 (before PC restart)
+Last updated: 2026-05-27
 
 ## Decisions made
 
 - **Domain:** annaletizia.com (Namecheap, currently parked)
-- **Hosting:** Vercel (later, after GitHub is set up)
+- **Hosting:** Vercel — live at https://annaletizia-portfolio.vercel.app/
 - **Stack:** Next.js 16 + TypeScript + Tailwind CSS
 - **Tests:** Jest + React Testing Library
 - **Style:** bold and creative
 - **Languages:** Spanish & Italian (native), English, basic French
-- **GitHub:** annaletizia10
+- **GitHub:** annaletizia10 / [annaletizia-portfolio](https://github.com/annaletizia10/annaletizia-portfolio)
 - **LinkedIn:** https://www.linkedin.com/in/anna-yarossi-4738111b8/
 - **Highlights:** self-taught developer, self-directed learner, photography
 
@@ -25,27 +25,28 @@ Last updated: 2026-05-26 (before PC restart)
 
 - [x] Project scaffold at `/home/leti/annaletizia-portfolio`
 - [x] Next.js app created (default template)
-- [x] Local git repo on `main` with initial commit (`66f11fc`)
-- [x] `npm install` completed (`node_modules` present)
+- [x] Local git repo on `main`
+- [x] **PR #1 merged:** Jest, CONTRIBUTING.md, PR template
+- [x] GitHub repo: `annaletizia10/annaletizia-portfolio`
+- [x] Vercel connected — auto-deploys on merge to `main`
 
 ## Not done yet (pick up here)
 
-- [ ] Agree on GitHub repo name and create remote under `annaletizia10`
-- [ ] **PR #1:** Add Jest, CONTRIBUTING.md, PR template, workflow docs (in progress on `chore/vitest-and-workflow`)
 - [ ] **PR #2:** Bold/creative design tokens and base layout
 - [ ] **PR #3+:** Sections (hero, about, skills, projects, photography, contact)
-- [ ] Push to GitHub and connect Vercel
-- [ ] Point annaletizia.com DNS at Vercel
+- [ ] Point annaletizia.com DNS at Vercel (Namecheap)
 
 ## Resume commands
 
 ```bash
 cd ~/annaletizia-portfolio
+git checkout main
+git pull
 npm run dev
 ```
 
-Open http://localhost:3000 — you should see the default Next.js starter page.
+Live site: https://annaletizia-portfolio.vercel.app/
 
 ## Next session prompt
 
-> "Let's continue the portfolio project — we're ready for PR #1 (testing + GitHub workflow)."
+> "Let's continue the portfolio project — PR #2 (design tokens + base layout), or connect annaletizia.com on Namecheap."

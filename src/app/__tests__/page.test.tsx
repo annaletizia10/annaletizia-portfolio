@@ -3,13 +3,18 @@ import { render, screen } from "@testing-library/react";
 import Home from "../page";
 
 describe("Home page", () => {
-  it("renders the starter heading", () => {
+  it("renders the hero with Anna's name and tagline", () => {
     render(<Home />);
 
     expect(
       screen.getByRole("heading", {
-        name: /to get started, edit the page\.tsx file\./i,
+        level: 1,
+        name: /anna yarossi/i,
       }),
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByText("Self-taught builder. Visual thinker."),
     ).toBeInTheDocument();
   });
 });
